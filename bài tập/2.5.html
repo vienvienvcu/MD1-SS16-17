@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Viết hàm truyền vào 2 số nguyên bất kì,
+      // //  thực hiện đổi chỗ 2 số nguyên đó
+      // function myFunction(first,second) {
+      //     let temp = first;
+      //     first = second;
+      //     second = temp;
+      //     console.log(first +","+second);
+      // }
+      // myFunction(2,3)
+
+     
+  
+    
+
+      //     const todoList = [
+      //         "Do homework at 8pm",
+      //         "Do exercises everyday",
+      //         "Go to bed early",
+      //     ];
+
+      //     //  xay dung chuong trinh ung dung todo list
+      //     //  cho nguowi dung nhap vao 4 chu cai C/R/U/D
+      // while(true){
+      //     let userInput = prompt("please input C/R/U/D to control your todo list ")
+      //     if( userInput === "C"){
+      //         // them moi vao mot todo trong todo list
+      //         let todo = prompt("please input toto content")
+      //         todoList.push(todo);
+      //         // in ra danh sach todo
+      //         function printTodo();
+      //     }else if(userInput === "R"){
+      //     //    in ra ds to do
+      //     function printTodo();
+      //     }else if (userInput === "U"){
+      //     // cap nhat noi dung cua mot todo
+      //     // vi tri va noi dung moi can cap nhap tai vi tri do
+      //     let index = +prompt("please input to do index")
+      //     let content = prompt("please input new todo content")
+      //     todoList[index-1] = content;
+      //     // in ra ds to do
+      //     function printTodo()
+      //     }else if (userInput === "D"){
+      //     // xoa 1 to do ra khoi todo list
+      //     let index = +prompt("please input to do index")
+      //     todoList.splice(index-1,1);
+      //     // in ra ds to do
+      //     function printTodo();
+      //     }else if (userInput === "E"){
+      //     // thoat khoi chung trinh
+      //     console.log("thanks to you");
+      //     break;
+      //     }else{
+      //     // invalid commands:lệnh không hợp lệ
+      //     }
+      // }
+
+      // // FUNCITION
+      // // dong goi mot lan duy nhat
+      //   function printTodo() {
+      //     for (let index in todoList) {
+      //         console.log(`${+index+1}. ${todoList[index]}`);
+      //     }
+      //   }
+      //  gia su xay dung chung trinh(1 ham )may tinh cam tay
+      //  tay chi thuc hien phep cong tinh tong 2 so bat ki
+      // calculator (1,2);
+      // // 1,2=>3
+
+      // calculator (4,5);
+      // // 4,5=>9
+
+      // calculator (10,20);
+      // // 10,20=>30
+      // //  a,b la tham so dai dien (parameters)
+      // // doi so thuc te( arguments)
+      // function calculator(a,b) {
+      //     console.log(a+b);
+      //     // 1,2-->3
+      //     // 4,5--->9
+      //     // 10,20=>30
+      //     // tinh tong cua nhung chua so do
+      //     // dau vao tai nhung lan su dung ham
+      // }
+
+
+    // Viết hàm kiểm tra xem số người dùng nhập vào có phải là số nguyên tố hay không?
+//     let n = +prompt("nhap vao so nguyen duong bat ki");
+//     // console.log(n);
+// //     function checkSnt(n) {
+// //         let check = true;
+// //         if( n < 1){
+// //             console.log("khong hop ly");
+// //         }else if(n>=2){
+// //             for(let i = 2 ; i < n ; i++){
+// //             if (n % i == 0) {
+// //                 check = false;
+// //                 console.log(false);
+// //                 // break;
+// //             }
+// //         }
+// //         if(check){
+// //             console.log(n," so nguyen to");
+// //         }else {
+// //             console.log(n," ko la so nguyen to");
+// //         }
+// //     }
+// // }
+
+// /  checkSnt(n);
+
+// debugger;
+// console.log(a);
+// var a = 10;
+// hello();
+// function hello() {
+//     console.log("hello word");
+// }
+
+// Cho người dùng nhập vào chuỗi kí tự. 
+// Viết hàm kiểm tra xem tần suất xuất hiện của mỗi ký tự và in ra chúng
+
+// Input: “Hello World”
+// chua lam xong
+// let n = "HelloWorld"
+// let array = n.split("");
+// console.log(array);
+// function checkKT(array) {
+//     let count = 0;
+//     for(let i = 0; i<array.length; i++ ){
+//         for(let j = i; j<array.length; j++){
+//             if(array[i] === array[j]){
+//                 count++;
+//             }
+//         }
+//         console.log(array[i],count);
+//         count = 0;
+//     }   
+// }
+// checkKT(array)
+// Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào.
+//  Thực thi hàm vừa khởi tạo
+//  let n = +prompt("nhap vao mot so nguyen bat ki")
+//  function myFunction(n) {
+//     let GT = 1;
+//     for(let i = 1; i<=n ; i++){
+//        GT = GT*i
+//     }
+//     console.log(GT);
+//  }
+//  myFunction(n);
+// Cho người dùng nhập vào chuỗi số bất kì. 
+// Viết hàm sắp xếp chuỗi số đó từ bé đến lớn
+
+
+
+
+function countCharacters(str) {
+
+const charCount = [];
+
+for (let i = 0; i < str.length; i++) {
+    let found = false;
+
+
+    for (let j = 0; j < charCount.length; j++) {
+
+        if (charCount[j][0] === str[i]) {
+            charCount[j][1]++;
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        charCount.push([str[i], 1]);
+    }
+}
+
+return charCount;
+}
+
+console.log(countCharacters('Hello world'));
+    </script>
+  </body>
+</html>

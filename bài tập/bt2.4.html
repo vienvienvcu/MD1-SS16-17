@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // kiểm tra xem số đưa vào có phải nguyên dương không
+        let n = prompt("nhap vaomot so nguyen duong")
+            function laSoNguyenDuong(n){
+            let check = false;
+            if(n>0 && Number.isInteger(n)){
+                return check = true;
+            }
+            if(check==false){
+                console.log("k phai la so nguyen duong");
+            }else{
+                console.log("la so nguyen to");
+            }
+        }
+  laSoNguyenDuong(n);
+    </script>
+</body>
+</html>

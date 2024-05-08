@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+      // Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+      //  kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+      //  Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+      let a = prompt("nhap vao mot ki tu bat ki");
+      let n = prompt("nhap vao cac ki mang bat ki");
+      let array = n.split("");
+      console.log(array);
+      function checkIndex(array) {
+        let check = false;
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+          if (a === array[i]) {
+            check = true;
+            count++;
+          }
+        }
+        if (check == true) {
+          console.log(count);
+        } else {
+          console.log(-1);
+        }
+      }
+      checkIndex(array);
+   
+    </script>
+</body>
+</html>

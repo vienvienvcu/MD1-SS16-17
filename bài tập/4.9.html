@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// n = 2,6,8,3,4,9
+let n = prompt("nhap day so nguyen bat ki ");
+let arr = n.split(",");
+console.log(arr);
+
+function sxFunction(a,b) {
+    return a - b;   
+}
+sxFunction (arr);
+console.log(arr.sort(sxFunction));
+    </script>
+</body>
+</html>

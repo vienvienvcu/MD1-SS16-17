@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        // HÀM VIẾT HOA CHỮ CÁI ĐẦU TIÊN
+        function capitalize(str) {
+  let words = str.toLowerCase().split("");
+  console.log(str);
+  for (let i = 0; i < words.length; i++) {
+    words[0] = words[0][0].toUpperCase() + words[0].slice(1);
+    
+  }
+  return words.join("");
+//   console.log(words);
+}
+let a = "hello WORD";
+let b = "rIkkEi acaDEMY";
+console.log(capitalize(a)); // Hello word
+console.log(capitalize(b)); // Rikkei Academy
+
+    </script>
+ </body>
+ </html>

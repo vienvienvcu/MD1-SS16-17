@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus" ];
+        let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        let a = prompt("nhap cac ten chom sao")
+        // let b = prompt("nhap cac ten chom sao tuong uong")
+        function myFunction(a) {
+            let check = false
+            let j = 0
+            for(let i = 0; i<arr1.length; i++){
+                if(a == arr1[i]){
+                    j = i;
+                    check = true
+                }
+            }
+            if(check == false){
+                console.log("khong ton tai ten chom sao nay");
+            }else{
+                console.log(arr2[j]);
+            }
+        }
+       
+        myFunction(a);
+    </script>
+</body>
+</html>

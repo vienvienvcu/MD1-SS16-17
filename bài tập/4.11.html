@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+function countCharacters(str) {
+
+const charCount = [];
+
+for (let i = 0; i < str.length; i++) {
+    let found = false;
+
+
+    for (let j = 0; j < charCount.length; j++) {
+
+        if (charCount[j][0] === str[i]) {
+            charCount[j][1]++;
+            found = true;
+            break;
+        }
+    }
+
+    if (!found) {
+        charCount.push([str[i], 1]);
+    }
+}
+
+return charCount;
+}
+
+console.log(countCharacters('Hello world'));
+    </script>
+</body>
+</html>

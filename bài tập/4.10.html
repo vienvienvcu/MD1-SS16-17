@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+// Bài 7: Viết chương trình tạo hàm để kiểm tra xem năm người 
+// dùng nhập vào có phải năm nhuận không
+// Năm chia hết cho 400 nhưng không chia hết cho 100.
+// Hoặc năm chia hết cho 4.
+function CheckNamnhuan(nam) {
+    // kiem tra neu chia het cho 100 k ko;
+    if ( nam % 100 ===0){
+        //neu chia het cho 400 thi la nam nhuan
+        if ( nam % 400===0){
+            return true;
+        }else{ // nguoc lai k phai nam nhuan
+            return false;
+        }
+    }else if ( nam % 4 ===0){
+        return true;
+    }else{
+        return false;
+    }
+}
+// sử dụng
+var flag = CheckNamnhuan(2010);
+ 
+if (flag){
+    console.log('là năm nhuận');
+} else {
+     console.log('không phải là năm nhuận');
+}
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
